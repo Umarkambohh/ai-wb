@@ -1,0 +1,18 @@
+.btn_primary {
+  padding: 10px 15px;
+  background-color: $science-blue;
+  border: none;
+  color: $white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $science-blue-inverse;
+  }
+}
+
+.btn_lg {
+  padding: 20px 50px;
+}

@@ -1,0 +1,25 @@
+.banner {
+  background-image: url('/images/bg/banner-bg.png');
+  background-position: 550px 42%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: black;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &--heading {
+    color: $white;
+    font-size: 56px;
+    margin-bottom: 15px;
+  }
+
+  &--desc {
+    color: $athens-gray;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
