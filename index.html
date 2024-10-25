@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header"> <!--  sticky -->
     <div class="container header__wrapper">
       <a href="/">
         <img class="header__brand-logo" src="./images/logo/AIWorkbooksLogoBlue.png" alt="brand logo">
@@ -27,9 +27,7 @@
           <li class="header__nav--link"><a href="">contact</a></li>
         </ul>
       </nav>
-      <a href="">
-        <button class="btn_primary">SignUp/Login</button>
-      </a>
+      <a href="/login.html" class="btn_primary">SignUp/Login</a>
     </div>
   </header>
 
@@ -77,18 +75,22 @@
         </div>
 
         <div class="col-md-4">
-          <h6 class="footer--title mb-4">Sign up for email communications!</h6>
+          <h6 class="footer--title mb-2">Sign up for email communications!</h6>
+          <p class="footer--desc mb-4">Stay updated with the latest news and special offers. Enter your email below:</p>
           <div class="input-group">
-            <input type="text" class="form-control py-2" placeholder="Enter your email" aria-describedby="basic-addon2">
+            <input type="text" class="form-control py-1.5" placeholder="Enter your email"
+              aria-describedby="basic-addon2">
             <button class="input-group-text bg_primary text-white">SUBSCRIBE</button>
 
           </div>
           <ul class="footer__social ps-0">
-            <li class="footer__social--item ms-0"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li class="footer__social--item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="footer__social--item ms-0"><a class="text-black" href=""><i
+                  class="fa-brands fa-x-twitter"></i></a></li>
+            <li class="footer__social--item"><a class="text-black" href=""><i
+                  class="fa-brands fa-instagram"></i></a></li>
             <li class="footer__social--item"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
             <li class="footer__social--item"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="footer__social--item"><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li class="footer__social--item"><a href=""><i class="text-danger fa-brands fa-youtube"></i></a></li>
           </ul>
         </div>
       </div>
@@ -99,6 +101,7 @@
   </footer>
 
   <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
