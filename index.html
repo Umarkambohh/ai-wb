@@ -27,14 +27,14 @@
           <li class="header__nav--link"><a href="">contact</a></li>
         </ul>
       </nav>
-      <a href="/login.html" class="btn_primary">SignUp/Login</a>
+      <a href="/login.html" class="btn_primary">SignUp/Register</a>
     </div>
   </header>
 
   <main>
     <div class="banner">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center justify-content-between">
           <div class="col-md-6">
             <h1 class="banner--heading">Personalized customer care at enterprise scale</h1>
             <p class="banner--desc">Industry-leading knowledge and powerful generative AI, combined to bring your
@@ -42,6 +42,31 @@
               experience.
             </p>
             <button class="btn_primary btn_lg">Read Case Study</button>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-lg p-4">
+              <div class="text-center mb-1">
+                <a href="./index.html">
+                  <img src="./images/logo/AIWorkbooksLogo.png" alt="AI Workbooks Logo" class="mb-3"
+                    style="width: 120px;" />
+                </a>
+                <h5 class="fw-bold">AI Workbooks</h5>
+                <p class="text-muted">Welcome! Login in to continue</p>
+              </div>
+              <form>
+                <input type="email" class="form-control mb-3" id="email" placeholder="Email" required />
+                <input type="password" class="form-control mb-3" id="password" placeholder="Password" required />
+                <div class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="remember" />
+                  <label class="form-check-label" for="remember">Remember me?</label>
+                </div>
+                <div class="d-grid gap-2 text-center">
+                  <button type="submit" class="btn btn_primary">Log in</button>
+                  <small><a href="/register.html" class="text-decoration-none">Register as a new user</a></small>
+                  <small><a href="/forgot-password.html" class="text-decoration-none">Forgot your password?</a></small>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -86,8 +111,8 @@
           <ul class="footer__social ps-0">
             <li class="footer__social--item ms-0"><a class="text-black" href=""><i
                   class="fa-brands fa-x-twitter"></i></a></li>
-            <li class="footer__social--item"><a class="text-black" href=""><i
-                  class="fa-brands fa-instagram"></i></a></li>
+            <li class="footer__social--item"><a class="text-black" href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
             <li class="footer__social--item"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
             <li class="footer__social--item"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
             <li class="footer__social--item"><a href=""><i class="text-danger fa-brands fa-youtube"></i></a></li>
@@ -99,7 +124,6 @@
       <p class="mb-1">Copyright © 2024 AI Workbooks All rights reserved.</p>
     </div>
   </footer>
-
   <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
   <script src="./js/index.js"></script>
 </body>

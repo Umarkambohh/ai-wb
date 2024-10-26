@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
   <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card shadow-lg p-4" style="width: 400px;">
@@ -20,9 +18,8 @@
           <img src="./images/logo/AIWorkbooksLogo.png" alt="AI Workbooks Logo" class="mb-3" style="width: 120px;" />
         </a>
         <h5 class="fw-bold">AI Workbooks</h5>
-        <p class="text-muted">Welcome! Sign in to continue</p>
+        <p class="text-muted">Welcome! Use another service to register</p>
       </div>
-
       <div class="d-grid gap-2 mb-3">
         <button class="btn btn-light d-flex align-items-center justify-content-center fs-7 border mb-2">
           <img src="./images/icons/google.png" class="me-2" alt="" style="width: 20px;"> Continue with Google
@@ -31,31 +28,26 @@
           <img src="./images/icons/facebook.png" class="me-2" alt="" style="width: 20px;"> Continue with Facebook
         </button>
       </div>
-
-      <small class="text-center text-capitalize text-muted mb-3">use your AI Workbook's account to login</small>
-
+      <h1 class="fs-5 text-muted mb-3">Create a new account</h1>
       <form>
+        <input type="text" class="form-control mb-3" id="email" placeholder="Your Name" required />
         <input type="email" class="form-control mb-3" id="email" placeholder="Email" required />
-
         <input type="password" class="form-control mb-3" id="password" placeholder="Password" required />
-
-        <div class="form-check mb-3">
-          <input type="checkbox" class="form-check-input" id="remember" />
-          <label class="form-check-label" for="remember">Remember me?</label>
-        </div>
-
-        <div class="d-grid gap-2 text-center">
-          <button type="submit" class="btn btn_primary">Log in</button>
-          <small><a href="/register.html" class="text-decoration-none">Register as a new user</a></small>
-          <small><a href="/forgot-password.html" class="text-decoration-none">Forgot your password?</a></small>
+        <input type="password" class="form-control mb-3" id="password" placeholder="Confirm Password" required />
+        <select class="form-select mb-3" aria-label="Select Your Industry" required>
+          <option selected>Select Your Industry</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="d-flex justify-content-between align-items-center">
+          <a class="btn btn-link" href="/index.html">Back</a>
+          <button type="submit" class="btn btn_primary">Register</button>
         </div>
       </form>
     </div>
   </div>
-
-
   <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
   <script src="./js/index.js"></script>
 </body>
-
 </html>
